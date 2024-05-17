@@ -40,7 +40,9 @@ Initially I was interested in smaller models like tiny-llama and I even experime
 but the results were as bad as the early AI videos of Will Smith eating spaghetti.
 
 Once I decided I needed to use one of the big data models it was just a matter of finding a cheap one that works.
-Google's product offerings are a bit all over the place but I was able to quickly test and get to actual code through the Vertex AI section of the Google Cloud console.
+Google's product offerings are all over the place -
+it seems every possible use case for Gemini has been labeled as a different product and given a different name.
+In the end I went with ChatGPT 3.5 Turbo.
 
 I’m happy to have finally found a way to use AI in a way that won’t hallucinate and cause more trouble than if I had not used it.
 And now I can get this code into a cloud function and finish my original idea for the hacker news browser + filter!
@@ -50,3 +52,5 @@ And now I can get this code into a cloud function and finish my original idea fo
 Ignore `index.js` and everything associated with it - `llm-test.js` is all that matters.
 In order to run the `llm-test.js` file you will need to be using a version of `node > 20.6.0`
 and add a .env file modeled after the `.env.example` file in this repo.
+
+To run with node's built in .env file support run `npm run dev` or `node --env=.env llm-test.js`.
